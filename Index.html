@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & JavaScript Interactions</title>
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Animations & JavaScript Interactions</h1>
+            <p>Explore the power of CSS animations and JavaScript functions working together</p>
+        </header>
+
+        <!-- Part 1: CSS Animations Section -->
+        <section class="section" id="css-section">
+            <h2>CSS Animations & Transitions</h2>
+            
+            <div class="showcase-grid">
+                <div class="card">
+                    <div class="icon"><i class="fas fa-hand-pointer"></i></div>
+                    <h3>Button Animations</h3>
+                    <p>Buttons with smooth hover and active state animations</p>
+                    <button class="btn css-btn">Hover Me</button>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Transformations</h3>
+                    <p>Elements that transform on hover with smooth transitions</p>
+                    <div class="hover-element">Hover Me</div>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="fas fa-spinner"></i></div>
+                    <h3>Keyframe Animations</h3>
+                    <p>Continuous animations using CSS keyframes</p>
+                    <div class="animated-box">Pulsing</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions Section -->
+        <section class="section" id="js-section">
+            <h2>JavaScript Functions</h2>
+            
+            <div class="showcase-grid">
+                <div class="card">
+                    <div class="icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Function Parameters</h3>
+                    <p>Functions that accept parameters and return values</p>
+                    <div class="input-group">
+                        <input type="number" id="param1" value="5" placeholder="First number">
+                        <input type="number" id="param2" value="3" placeholder="Second number">
+                    </div>
+                    <button class="btn" onclick="calculate()">Calculate Sum</button>
+                    <div class="output" id="calcOutput">Result: </div>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Scope Demonstration</h3>
+                    <p>Understanding global vs local scope in JavaScript</p>
+                    <button class="btn" onclick="demonstrateScope()">Run Scope Demo</button>
+                    <div class="output" id="scopeOutput">Results will appear here...</div>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Reusable Functions</h3>
+                    <p>Functions that can be reused with different parameters</p>
+                    <div class="input-group">
+                        <input type="text" id="textInput" value="Hello World" placeholder="Enter text">
+                    </div>
+                    <button class="btn" onclick="formatText('uppercase')">UPPERCASE</button>
+                    <button class="btn" onclick="formatText('lowercase')">lowercase</button>
+                    <div class="output" id="textOutput">Formatted text: </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined Section -->
+        <section class="section" id="combined-section">
+            <h2>Combining CSS Animations with JavaScript</h2>
+            
+            <div class="showcase-grid">
+                <div class="card">
+                    <div class="icon"><i class="fas fa-play-circle"></i></div>
+                    <h3>Animation Control</h3>
+                    <p>Use JavaScript to trigger CSS animations</p>
+                    <div class="demo-box" id="animatedBox">Click Me!</div>
+                    <button class="btn" onclick="toggleAnimation()">Toggle Animation</button>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Card Flip</h3>
+                    <p>JavaScript toggles the CSS flip animation</p>
+                    <div class="flip-card" id="flipCard">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">Front</div>
+                            <div class="flip-card-back">Back</div>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="flipCard()">Flip Card</button>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="fas fa-window-restore"></i></div>
+                    <h3>Modal Popup</h3>
+                    <p>JavaScript controls CSS modal animations</p>
+                    <button class="btn" onclick="openModal()">Open Modal</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h2>Animated Modal</h2>
+                <p>This modal uses CSS animations controlled by JavaScript</p>
+                <button class="btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>CSS Animations & JavaScript Interactions</p>
+            <p>Demonstrating the combination of CSS animations and JavaScript functions</p>
+        </footer>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
